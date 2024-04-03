@@ -1,20 +1,19 @@
 {
-  "name": "examples",
+  "name": "parcel-react-example",
+  "description": "Simple React example",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/jthegedus/examples.git",
-  "author": "jthegedus <james@jthegedus.com>",
+  "main": "src/index.html",
   "license": "MIT",
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {
-    "husky": "^1.1.2",
-    "prettier": "^1.14.3",
-    "pretty-quick": "^1.8.0"
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "helia": "^4.0.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
   }
 }

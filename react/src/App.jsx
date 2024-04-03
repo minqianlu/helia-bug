@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
+import { createHelia } from 'helia'
 
 export default class App extends Component {
   render() {
